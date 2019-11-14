@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Templejt</title>
+    <link rel="stylesheet" type="text/css" href="less/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" >
+
+
+</head>
+
+
+<body style="background-color: lightskyblue;">
+    <script type="text/javascript" src="js/js.js"></script>
+    <div id="prvi">
+        <div id="slogan">
+        Lako i jeftino do ulja za svoj automobil</div>
+        
+        <img src="slike/logo.png" alt="Logo" id="logo">
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav">
+                <ul>
+                        <li><a href="template.html">Pocetna</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                        <li><a href="Onama.html">O nama</a></li>
+                    </ul>
+        </div>
+      </div>
+
+      
+    <h2 style="text-align:center; background-color:rgb(128, 126, 123);">Galerija</h2>
+    
+    <div class="row" style="background-color: lightskyblue;">
+      <div class="column" style="margin-top: 10px;">
+        <img src="slike/proizvod1.jpg" style="width:100%"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column" style="margin-top: 10px;">
+        <img src="slike/proizvod4.jpg" style="width:100%; height: 505px;"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column" style="margin-top: 10px;">
+        <img src="slike/proizvod3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+     
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="slike/proizvod1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="slike/proizvod4.jpg" style="width:100%; height:40%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="slike/proizvod3.jpg" style="width:100%">
+        </div>
+        
+       
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="slike/proizvod1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Castrol Edge">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="slike/proizvod4.jpg"style="width:100%; height=0%" onclick="currentSlide(2)" alt="Shell HELIX">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="slike/proizvod3.jpg" style="width:100%" onclick="currentSlide(3)" alt="TOTAL QUARTZ">
+        </div>
+        
+      </div>
+    </div>
+    <h2 style="text-align:center; background-color: rgb(128, 126, 123);">O nama</h2>
+
+    <p>FR AUTO je kompanija osnovana 2006. godine od strane ljudi sa višegodišnjim iskustvom u oblasti prodaje auto delova. 
+        Naš tim je sastavljen od mladih, energičnih i uspešnih ljudi okupljenih oko istog cilja, a to je da postanemo lider na 
+        našem tržištu za uvoz, distribuciju i prodaju auto delova.</p>
+
+
+        
+    </body>
+</html>
